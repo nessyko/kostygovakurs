@@ -418,6 +418,7 @@ padding-bottom: 64px;
     text-align: center; 
     font-size: 12px;
     font-weight: $font-weight-base;
+    color: $color-text-dark;
     &:hover {
         background: $color-text-dark;
         color: $color-text;
@@ -492,6 +493,7 @@ padding-bottom: 64px;
       position: relative;
       display: flex;
       justify-content: flex-end;
+      color: $color-text-dark;
     }
     &__item1{
       border: 1px solid $color-text-dark;
@@ -508,6 +510,7 @@ padding-bottom: 64px;
       background-color: transparent;
       font-family: Montserrat;
       font-weight: $font-weight-small;
+      color: $color-text-dark;
     }    
     &__form{
       position: absolute;
@@ -524,7 +527,6 @@ padding-bottom: 64px;
       gap: 65px;
     }
     &__item2{
-      border-color: 1px solid $color-text-dark;
       width: 227px;
       height: 40px;
       border-radius: 20px;
@@ -538,6 +540,8 @@ padding-bottom: 64px;
       background-position: 185px;
       font-family: Montserrat;
       font-weight: $font-weight-base;
+      color: $color-text-dark;
+      background-color: transparent;
     }
 }
 

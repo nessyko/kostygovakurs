@@ -420,6 +420,7 @@ li {
   text-align: center;
   font-size: 12px;
   font-weight: 400;
+  color: #000000;
 }
 .footer__subscribe-button:hover {
   background: #000000;
@@ -495,6 +496,7 @@ li {
   position: relative;
   display: flex;
   justify-content: flex-end;
+  color: #000000;
 }
 .catalog-filter__item1 {
   border: 1px solid #000000;
@@ -513,6 +515,7 @@ li {
   background-color: transparent;
   font-family: Montserrat;
   font-weight: 500;
+  color: #000000;
 }
 .catalog-filter__form {
   position: absolute;
@@ -530,7 +533,6 @@ li {
   gap: 65px;
 }
 .catalog-filter__item2 {
-  border-color: 1px solid #000000;
   width: 227px;
   height: 40px;
   border-radius: 20px;
@@ -546,6 +548,8 @@ li {
   background-position: 185px;
   font-family: Montserrat;
   font-weight: 400;
+  color: #000000;
+  background-color: transparent;
 }
 
 .catalog-filter__part-left {
@@ -1011,6 +1015,7 @@ li {
   border: 1px solid #000000;
   border-radius: 20px;
   background-color: transparent;
+  color: #000000;
 }
 .cart__form-button:hover {
   background: #000000;
