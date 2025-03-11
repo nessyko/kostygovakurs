@@ -38,10 +38,12 @@
     }
     .title{
       font-size: 48px;
+      margin-top: 29px;
     }
     .furniture-categories{
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
+      margin-top: 32px;
       &__container{
         margin-top: 32px;
         margin-bottom: 32px;
@@ -58,6 +60,7 @@
       &__heading{
       font-size: 24px;
       line-height: 29.26px;
+
       }
     }
 .catalog__heading{
@@ -99,6 +102,9 @@ margin-bottom: 8px;
 &__info{  
   gap: 100.2px;
 }
+&__subscribe{
+margin-top: 69px;
+}
 }
 .catalog-top__content{
   display: flex;
@@ -125,11 +131,20 @@ line-height: 58.51px;
 text-align: center;
 margin-top: 82px;
 }
-.cart__name-box{
+.cart{
+  &__name-box{
   display: none;
 }
-.cart__img{
+&__img{
   display: none;
+}
+&__info{
+  padding-left: 0;
+}
+&__form{
+  margin-top: 48px;
+  max-width: 343px;
+}
 }
 .catalog-filter__content-wrapper{
   flex-direction: column;
@@ -137,5 +152,7 @@ margin-top: 82px;
 .catalog-filter__form{
   right: -130px;
 }
-
+.link-box{
+  padding-bottom: 32px;
+}
 }

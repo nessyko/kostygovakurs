@@ -62,6 +62,9 @@ li {
     padding-right: $gap;
       &::placeholder{
       color: $color-text;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
       }
       &:focus {
         outline: none;
@@ -87,7 +90,6 @@ li {
 }
 
 .title {
-  font-family: sans-serif;
   font-style: normal;
   font-weight: $font-weight-large;
   font-size: $font-size-Megalarge;
@@ -102,6 +104,7 @@ li {
   background-image: url(image/backgraund.jpg);
   background-repeat:no-repeat;
   background-position:center;
+  background-size: cover;
     &__slogan{
     font-size: $font-size-large;
     font-weight: $font-weight-base;
@@ -225,37 +228,17 @@ li {
     }
     &__img{
       display: flex;
-    width: 100%;
-    &::before{
-      content: "";
-      width: 24px;
-      height: 24px;
-      background-image: url(/image/hearticon.png);
-    }}
-    &__img:hover 
-    &-icons {
-      opacity: 1;
-      }
-      &__icon-cart,
-      &__icon-heart {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
+    width: 100%;}
+    &__icons{  
+      display: none;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+    &__img:hover &__icons {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      } 
-      &__icon-cart::before {
-        content: "";
-        background-image: url(image/cart.png);
-        background-size: cover;
-      }
-      &__icon-heart::before {
-        content: "";
-        background-image: url(image/hearticon.png);
-        background-size: cover;
-      }
+      gap: 23px;
+    }
     &__name{
     color: $color-text-dark;
     margin-top: 10px;
@@ -263,7 +246,7 @@ li {
     height: 29px;
     top: 260px;
     font-size: $font-size-large;
-    font-weight: $font-weight-large;
+    font-weight: $font-weight-small;
     line-height: 29.26px;
     display: flex;
     }
@@ -280,8 +263,8 @@ li {
     gap: $gap;
     }
     &__price{
-    font-weight: $font-weight-base;
-    font-size: $font-size-large;
+    font-weight: $font-weight-small;
+    font-size: $font-size-small;
     line-height: 29.26px;
       &--sale{
       color: $color-gray;
@@ -388,6 +371,7 @@ padding-bottom: 64px;
       &-icons  img {
         max-width: 30px;
       height: auto;
+      filter: brightness(0) saturate(100%);
       }
       &-link{
       color: $color-gray;
@@ -408,6 +392,7 @@ padding-bottom: 64px;
     font-weight: $font-weight-base;
   }
   &__subscribe-button {
+    font-family: Montserrat;
     margin-top: 8px; 
     display: block; 
     width: 260px;
@@ -468,7 +453,6 @@ padding-bottom: 64px;
   padding-bottom: 41px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   & nav {
   display: flex; 
@@ -490,6 +474,9 @@ padding-bottom: 64px;
     margin-bottom: 39px;
     }
     &-button{
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
       position: relative;
       display: flex;
       justify-content: flex-end;
@@ -527,12 +514,12 @@ padding-bottom: 64px;
       gap: 65px;
     }
     &__item2{
+      border: 1px solid $color-text-dark;
       width: 227px;
       height: 40px;
       border-radius: 20px;
       font-size: $font-size-medium;
       font-weight: $font-weight-small;
-      line-height: 19.5px;
       padding-left: 23px;
       appearance: none;
       background-image: url(image/Polygon\ 1.svg) ;
@@ -542,6 +529,9 @@ padding-bottom: 64px;
       font-weight: $font-weight-base;
       color: $color-text-dark;
       background-color: transparent;
+      &:focus {
+        outline: none;
+      }
     }
 }
 
@@ -579,6 +569,9 @@ gap: 14px;
     position: absolute;
     width: 0;
     height: 0;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
       &:checked + .catalog-filter__radio-label::before {
       border-color: black;
       background-image: url(image/galka.png);
@@ -695,6 +688,9 @@ gap: 36px;
   appearance: none;
   position: relative;
     &-input{
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
     position: absolute;
     opacity: 0;
     width: 0;
@@ -791,6 +787,9 @@ gap: 36px;
     height: 16px;
     appearance: none;
     position: relative;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
     &:checked::before {
       content: "";
       position: absolute;
