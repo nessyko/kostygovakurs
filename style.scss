@@ -209,36 +209,40 @@ li {
   }
 }
 
+
 .product{
   max-width: 378px;
   display: flex;
   flex-direction: column;
+  overflow: visible;
+  position: relative;
+  &:hover::before,
+  &:hover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  }
+  &:hover::before {
+    background-image:url(image/cart.png) ; 
+    right: 55px; 
+  }
+  &:hover::after {
+    background-image: url(image/coolicon.svg); 
+    right: 12px; 
+  }
     &_price-box{
     display: flex;
     gap: $gap;
     }
-    &-icons{
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      display: flex;
-      gap: 10px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
     &__img{
       display: flex;
     width: 100%;}
-    &__icons{  
-      display: none;
-      position: absolute;
-      top: 12px;
-      right: 12px;
-    }
-    &__img:hover &__icons {
-      display: flex;
-      gap: 23px;
-    }
     &__name{
     color: $color-text-dark;
     margin-top: 10px;
@@ -368,10 +372,12 @@ padding-bottom: 64px;
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
-      &-icons  img {
+      &-icons {
         max-width: 30px;
       height: auto;
-      filter: brightness(0) saturate(100%);
+      &:hover{
+        filter: brightness(0) saturate(100%);
+      }
       }
       &-link{
       color: $color-gray;
@@ -380,10 +386,6 @@ padding-bottom: 64px;
       line-height: 17.07px;
       text-indent:12px;
       display: flex;
-      }
-      &__icon{
-      padding-top: 12px;
-      padding-bottom: 58px;
       }
     }
   &__subscribe-text{

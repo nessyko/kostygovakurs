@@ -218,33 +218,35 @@ li {
   max-width: 378px;
   display: flex;
   flex-direction: column;
+  overflow: visible;
+  position: relative;
+}
+.product:hover::before, .product:hover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.product:hover::before {
+  background-image: url(image/cart.png);
+  right: 55px;
+}
+.product:hover::after {
+  background-image: url(image/coolicon.svg);
+  right: 12px;
 }
 .product_price-box {
   display: flex;
   gap: 32px;
 }
-.product-icons {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
 .product__img {
   display: flex;
   width: 100%;
-}
-.product__icons {
-  display: none;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-}
-.product__img:hover .product__icons {
-  display: flex;
-  gap: 23px;
 }
 .product__name {
   color: #000000;
@@ -376,9 +378,11 @@ li {
   justify-content: flex-start;
   align-items: center;
 }
-.footer__social-icons img {
+.footer__social-icons {
   max-width: 30px;
   height: auto;
+}
+.footer__social-icons:hover {
   filter: brightness(0) saturate(100%);
 }
 .footer__social-link {
@@ -388,10 +392,6 @@ li {
   line-height: 17.07px;
   text-indent: 12px;
   display: flex;
-}
-.footer__social__icon {
-  padding-top: 12px;
-  padding-bottom: 58px;
 }
 .footer__subscribe-text {
   padding-bottom: 8px;
