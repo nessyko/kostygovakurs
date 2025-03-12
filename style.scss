@@ -216,10 +216,12 @@ li {
   flex-direction: column;
   overflow: visible;
   position: relative;
+  z-index: 1; 
   &:hover::before,
   &:hover::after {
   content: "";
   position: absolute;
+  z-index: 1; 
   top: 10px;
   width: 24px;
   height: 24px;
@@ -268,7 +270,7 @@ li {
     }
     &__price{
     font-weight: $font-weight-small;
-    font-size: $font-size-small;
+    font-size: $font-size-large;
     line-height: 29.26px;
       &--sale{
       color: $color-gray;
@@ -503,6 +505,7 @@ padding-bottom: 64px;
     }    
     &__form{
       position: absolute;
+      z-index: 2;
       top: calc( 100% + 14px );
       right: 0;
       display: flex;
