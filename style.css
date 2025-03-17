@@ -307,12 +307,10 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   padding-top: 32px;
-  padding-bottom: 58px;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   box-sizing: border-box;
 }
 .footer__info {
@@ -448,7 +446,6 @@ li {
 }
 .catalog-top__title {
   display: flex;
-  font-family: sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -1114,6 +1111,7 @@ li {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     margin-top: 32px;
+    margin-bottom: 32px;
   }
   .furniture-categories__container {
     margin-top: 32px;
@@ -1132,10 +1130,14 @@ li {
     font-size: 24px;
     line-height: 29.26px;
   }
+  .catalog {
+    margin-top: 32px;
+  }
   .catalog__heading {
     font-weight: 600;
     font-size: 24px;
     line-height: 29.26px;
+    padding-top: 0px;
   }
   .products__heading {
     font-weight: 600;
@@ -1164,14 +1166,11 @@ li {
   }
   .footer__container {
     justify-content: center;
-    gap: 32px;
+    gap: 69px;
     width: 100%;
   }
   .footer__info {
     gap: 100.2px;
-  }
-  .footer__subscribe {
-    margin-top: 69px;
   }
   .catalog-top__content {
     display: flex;
@@ -1219,5 +1218,8 @@ li {
   }
   .link-box {
     padding-bottom: 32px;
+  }
+  .cart{
+    margin-bottom: 48px;
   }
 }/*# sourceMappingURL=style.css.map */
